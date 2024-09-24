@@ -13,8 +13,8 @@ function App() {
   };
 
   const callDisplay = () => {
-    setOnCall(true);
-    setStatus(`on call with: ${display}`);
+    setOnCall((onCall) => true);
+    setStatus((status) => "ON A CALL");
   };
   const cancelDisplay = () => {
     setStatus("");
@@ -27,7 +27,7 @@ function App() {
       <div className="app">
         <h1 className={onCall ? "oncall" : ""}>niPhone</h1>
         <span className={onCall ? "oncall" : ""}>{display}</span>
-        <span>{status}</span>
+        <span className={onCall ? "oncall message" : "message"}>{status}</span>
         <div>
           <button disabled={onCall} onClick={() => updateDisplay(1)}>
             1

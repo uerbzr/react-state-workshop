@@ -85,3 +85,7 @@ li {
 .motto {
   font-size: 8pt;
 }
+.message {
+  font-size: 14pt;
+  font-weight: bold;
+}
