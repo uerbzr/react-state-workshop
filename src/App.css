@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 8px;
+  background: linear-gradient(-30deg, #363aeb, #00de6b);
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+
+  color: #ffffffdd;
+}
+
+.app {
+  font-family: sans-serif;
+  text-align: center;
+
+  width: 300px;
+
+  padding: 30px 50px;
+
+  border: solid 2px #ffffffdd;
+  border-radius: 5px;
+
+  display: grid;
+  gap: 30px;
+}
+
+.count {
+  font-size: 5rem;
+}
+
+.buttons {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.buttons button {
+  font-size: 2rem;
+  color: #ffffffdd;
+
+  width: 50px;
+  height: 50px;
+
+  background: none;
+  border: solid 2px #ffffffdd;
+  border-radius: 5px;
+
+  transition: 200ms;
+}
+
+.buttons button:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: greenyellow;
+}
+
+.buttons button:hover {
+  background-color: #ffffffdd;
+  color: green;
+}
+
+.buttons button:active {
+  background-color: #ffffff90;
+}
+table,
+table tr,
+table tr td {
+  border: 1px solid white;
+}
+li {
+  list-style: none;
+}
+.display {
+}
+.oncall {
+  color: red;
+}
+.motto {
+  font-size: 8pt;
+}
