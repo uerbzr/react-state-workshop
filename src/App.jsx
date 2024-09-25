@@ -13,8 +13,8 @@ function App() {
   };
 
   const callDisplay = () => {
-    setOnCall((onCall) => true);
-    setStatus((status) => "ON A CALL");
+    setOnCall(true);
+    setStatus("ON A CALL");
   };
   const cancelDisplay = () => {
     setStatus("");
@@ -75,7 +75,7 @@ function App() {
         <br />
         <br />
         <span className="motto">
-          made in Bournemouth
+          made in <em className={onCall ? "oncall" : ""}>Bournemouth</em>
           <br />
           the california of england
         </span>

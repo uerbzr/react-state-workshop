@@ -8,4 +8,4 @@ A simple phone application in React
 
 ## Setup
 
-- Clone, then run `npm run dev`
+- Clone, then run `npm install` & `npm run dev`
